@@ -3,7 +3,8 @@
 ## Instructions
 REST api that provides basic CRUD functionality for person objects.
 Designed to run alongside frontend application findyourperson-frontend: https://github.com/kenerstad/Findyourperson-FrontEnd
-	
+
+### Project setup
 2 options to run backend server:
 - using gradle: gradle build, gradle bootrun
 		
