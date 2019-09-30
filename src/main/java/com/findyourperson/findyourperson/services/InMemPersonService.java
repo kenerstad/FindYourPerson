@@ -53,8 +53,7 @@ public class InMemPersonService implements PersonService{
 		for (PersonModel personInStorage : personStorage) {
 			if (personInStorage.getId() == id)
 				return personInStorage;
-		}
-		
+		}		
 		return null;
 	}
 
@@ -74,6 +73,7 @@ public class InMemPersonService implements PersonService{
             	}
             	catch(Exception e) {
             		e.printStackTrace();
+            		return null;
             	}           	
 	        }	
 		}
@@ -91,7 +91,7 @@ public class InMemPersonService implements PersonService{
 	 * generates new person with the assigned properties of the checked person &
 	 * inserted into person storage list. 
 	 * ###
-	 * Persons that have been deleted in frontend have deleted property checked.
+	 * Persons that have been deleted in frontend have their name property checked with "DELETED
 	 * ###
 	 * Iterates list & updates persons that are not deleted or new.
 	 */
@@ -113,7 +113,6 @@ public class InMemPersonService implements PersonService{
 		        	PersonModel personInStorage = (PersonModel) it.next();
 		            if (personInStorage.getId() == person.getId()) {
 		            	if(person.getName().compareTo("DELETED") == 0) {
-		            		System.out.println("DELETING ID: " +person.getId());
 		            		try {
 		            			it.remove();
 		            		}
@@ -149,11 +148,12 @@ public class InMemPersonService implements PersonService{
             	}
             	catch(Exception e) {
             		e.printStackTrace();
-            	}               
-                return personStorage;
+            		return null;
+            	}                              
             }         
         }
-        return null;
+        
+        return personStorage;
 	}
 		
 	/*

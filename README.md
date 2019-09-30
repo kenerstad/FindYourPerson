@@ -20,8 +20,7 @@ Frontend has been configured to run on port 8082, backend will run on standard 8
 H2 Database, starter-data-jpa, dev-tools, starter-test
 
 ### Unresolved issues
-* DbPersonService.java class needs finishing, does not provide much implementation yet,
-unsure why repository.save() function currently not working.
+
 
 ### Planned features
 * Finish DbPersonService.java
