@@ -1,5 +1,8 @@
 # Findyourperson
 
+## Temporary branch
+This branch is intended for bug-fixing and doing some additional work on the project before merging back into master.
+
 ## Instructions
 REST api that provides basic CRUD functionality for person objects.
 Designed to run alongside frontend application findyourperson-frontend: https://github.com/kenerstad/Findyourperson-FrontEnd
