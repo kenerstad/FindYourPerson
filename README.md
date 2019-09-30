@@ -1,5 +1,6 @@
 ### Instructions
-
+	Designed to run alongside frontend application findyourperson-frontend: https://github.com/kenerstad/Findyourperson-FrontEnd
+	
 	2 options to run backend server:
 		- using gradle
 			gradle build
@@ -9,7 +10,7 @@
 			build jar: gradle fatJar
 			open cmdline & 'java -jar <jarfile>.jar in $project/build/libs
 	
-	Run backend alongside frontend to make the application work.
+	Frontend has been configured to run on port 8082, backend will run on standard 8080 so no worries! :D
 	
 
 ### Dependencies included
