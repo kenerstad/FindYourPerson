@@ -8,6 +8,18 @@ group = 'com.findyourperson'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
+//create a single Jar with all dependencies
+task fatJar(type: Jar) {
+	manifest {
+        attributes 'Implementation-Title': 'Findyourperson',  
+        	'Implementation-Version': version,
+        	'Main-Class': 'com.findyourperson.findyourperson.FindyourpersonApplication'
+    }
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
 configurations {
 	developmentOnly
 	runtimeClasspath {
