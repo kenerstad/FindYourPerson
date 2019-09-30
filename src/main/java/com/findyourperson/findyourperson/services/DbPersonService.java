@@ -20,10 +20,6 @@ public class DbPersonService implements PersonService{
 	PersonRepo personRepo;
 	
 	
-	public DbPersonService() {		
-		//createMockPeople();		
-	}
-	
 	@Override
 	public List<PersonModel> create(PersonModel person) {
 		return null;
@@ -55,7 +51,10 @@ public class DbPersonService implements PersonService{
 		return null;
 	}
 	
-	private void createMockPeople() {		
+	/*
+	 * Creates dummy PersonModels for use by the application in development.
+	 */
+	public void createMockPeople() {		
 		personRepo.save(new PersonModel("JK Rowlings", 44));
 		personRepo.save(new PersonModel("DB Weiss", 44));
 		personRepo.save(new PersonModel("DB Man", 33));
