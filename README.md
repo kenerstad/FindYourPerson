@@ -19,10 +19,12 @@ Designed to run alongside frontend application findyourperson-frontend: https://
 ### Dependencies included
 H2 Database, starter-data-jpa, dev-tools, starter-test
 
+### Unresolved issues
+DbPersonService.java class needs finishing, does not provide much implementation yet,
+unsure why repository.save() function currently not working.
 
 ### Planned features
-* Finish (DbPersonService.java) - repository.save() function currently not working,
-methods need fleshing out.
+* Finish DbPersonService.java
 	
 * Test suite - (Integration, unit tests)
 	
