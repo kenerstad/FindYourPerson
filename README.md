@@ -9,9 +9,7 @@ Designed to run alongside frontend application findyourperson-frontend: https://
 	gradle build
 	gradle bootrun
 		
-- running executable jar
-	build jar: gradle fatJar
-	open cmdline & 'java -jar <jarfile>.jar in $project/build/libs
+- running executable jar: gradle fatJar, then 'java -jar <jarfile>.jar in $project/build/libs
 	
 	Frontend has been configured to run on port 8082, backend will run on standard 8080 so no worries! :D
 	
