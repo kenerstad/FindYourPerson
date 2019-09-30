@@ -24,6 +24,6 @@ unsure why repository.save() function currently not working.
 	
 * Test suite - (Integration, unit tests)
 	
-* Backend validation on entity objects
+* Backend validation on person objects
 	
 * Authentication/Authorization using Spring Security
