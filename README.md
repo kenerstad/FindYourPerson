@@ -22,9 +22,7 @@ H2 Database, starter-data-jpa, dev-tools, starter-test
 ### Unresolved issues
 
 
-### Planned features
-* Finish DbPersonService.java
-	
+### Planned features	
 * Test suite - (Integration, unit tests)
 	
 * Backend validation on person objects
